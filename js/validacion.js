@@ -23,12 +23,14 @@ document.getElementById('regBtn').addEventListener('click', function() {
   
     // Validar que la contraseña tenga al menos 6 caracteres
     if (password1.length < 6) {
+        alert("La contraseña debe tener al menos 6 caracteres")
       showAlertError();
       return;
     }
   
     // Validar que las contraseñas sean iguales
     if (password1 !== password2) {
+        alert("tu contraseña no coincide")
       showAlertError();
       return;
     }
